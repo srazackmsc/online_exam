@@ -558,6 +558,101 @@
             "NaN",
             "Reference Error"
           ]
+        },
+        {
+          "qid": "q52",
+          "qdesc": "Given an array of objects users, print fullname.",
+          "qsnippet": "const users=[<br/>{firstName:'john',lastName:'Biden',age:26},<br/>{firstName:'jimmy',lastName:'cob',age:75},<br/>{firstName:'sam',lastName:'lewis',age:50},<br/>  {firstName:'Ronald',lastName:'Mathew',age:26},  <br/>];<br/><br/>const output=users.map((x)=>{<br/>return x.firstName+' '+x.lastName;<br/>})<br/>console.log(output);",
+          "options": [
+            "['john Biden', 'jimmy cob', 'sam lewis', 'Ronald Mathew']",
+            "['jimmy cob', 'john Biden', 'sam lewis', 'Ronald Mathew']",
+            "['john Biden', 'Ronald Mathew', 'sam lewis', 'jimmy cob']",
+            "Reference Error"
+          ]
+        },
+        {
+          "qid": "q53",
+          "qdesc": "List of all firstName from array whose age is more than 30?",
+          "qsnippet": "const users=[<br/>{firstName:'john',lastName:'Biden',age:26},<br/>{firstName:'jimmy',lastName:'Cob',age:75},<br/>{firstName:'Sam',lastName:'Lewis',age:50},<br/>{firstName:'Ronald',lastName:'Mathew',age:26}<br/>];<br/>const output=users.filter((x)=>x.age>30).map((x)=>x.firstName);<br/>console.log(output);<br/>",
+          "options": [
+            "['jimmy','john']",
+            "['Sam','Ronald']",
+            "['jimmy', 'Sam']"
+          ]
+        },
+        {
+          "qid": "q54",
+          "qdesc": "Print the names of students who scored more than 60?",
+          "qsnippet": "let student =[<br/>{name:'Smith',rollNumber:31,marks:80},<br/>{name:'Jenny',rollNumber:15,marks:69},<br/>{name:'John',rollNumber:16,marks:35},<br/>{name:'Tiger',rollNumber:7,marks:55}<br/>];<br/>const ans=student.filter((x)=> {<br/>return x.marks>60}).map((x)=>{return x.name});<br/>console.log(ans);<br/>",
+          "options": [
+            "['Smith', 'Jenny']",
+            "['John', 'Jenny']",
+            "['Jenny', 'Tiger']"
+          ]
+        },
+        {
+          "qid": "q55",
+          "qdesc": "Print sum of marks of all the student",
+          "qsnippet": "let student =[<br/>{name:'Smith',rollNumber:31,marks:80},<br/>{name:'Jenny',rollNumber:15,marks:69},<br/>{name:'John',rollNumber:16,marks:35},<br/>{name:'Tiger',rollNumber:7,marks:55}<br/>];<br/><br/>const details = student.reduce((acc,curr)=>{<br/>return acc+=curr.marks;<br/>},0);<br/>console.log(details);<br/>",
+          "options": [
+            "260",
+            "239",
+            "69",
+            "290"
+          ]
+        },
+        {
+          "qid": "q56",
+          "qdesc": "Which method use to remove an element from array in JavaScript?",
+          "qsnippet": "Exp :<br/>Original array => const fruits = ['apple', 'banana', 'orange', 'mango'];<br/>Expected array after remove 'orange'=> fruits = ['apple', 'banana', 'mango'];<br/>",
+          "options": [
+            "fruits.shift(2, 1);",
+            "fruits.splice(2, 1);",
+            "fruits.slice(2, 1);",
+            "fruits.some(2, 1);"
+          ]
+        },
+        {
+          "qid": "q57",
+          "qdesc": "How can you add elements to the beginning of an array?",
+          "qsnippet": "Exp : <br/>Original Array => let fruits = ['apple', 'banana'];<br/>Expected Array after apply method=>fruits = ['cherry','apple', 'banana'];",
+          "options": [
+            "fruits.push('cherry');",
+            "fruits.unshift('cherry');",
+            "fruits.pop('cherry');"
+          ]
+        },
+        {
+          "qid": "q58",
+          "qdesc": "Guess the output of the array 'find' method?",
+          "qsnippet": "let numbers = [1, 2, 3, 4, 5];<br/>let foundNumber = numbers.find(num => num > 3);<br/>console.log(foundNumber);",
+          "options": [
+            "3",
+            "5",
+            "4",
+            "6"
+          ]
+        },
+        {
+          "qid": "q59",
+          "qdesc": "Which of the following visibility property value is described by The element is not visible, but the layout of surrounding elements is not affected?",
+          "options": [
+            "visible",
+            "hidden",
+            "collapse",
+            "none of the mentioned"
+          ]
+        },
+        {
+          "qid": "q60",
+          "qdesc": "Key Features of the BOM?",
+          "options": [
+            "Dynamic Browser Control",
+            "URL Manipulation",
+            "Browser and Device Information",
+            "Screen and Resolution Access",
+            "All of the mentioned."
+          ]
         }
       ],
       "duration": 60
@@ -635,8 +730,8 @@
       "user_password": "Hdfc@1234",
       "exam_desc": "Web Development(HTML,CSS,JS)",
       "duration": 60,
-      "score": "100 %",
-      "exam_submitted_date": "2025-03-02T12:42:29.983Z"
+      "score": "96 %",
+      "exam_submitted_date": "2025-03-03T18:51:32.820Z"
     },
     {
       "id": "aefb",
@@ -679,8 +774,8 @@
       "user_password": "test100",
       "exam_desc": "Web Development(HTML,CSS,JS)",
       "duration": 60,
-      "score": "90 %",
-      "exam_submitted_date": "2025-03-02T14:29:33.311Z"
+      "score": "93 %",
+      "exam_submitted_date": "2025-03-03T19:04:13.937Z"
     }
   ],
   "exam_answers_category_types": [
@@ -890,6 +985,42 @@
         {
           "qid": "q51",
           "answer": "2"
+        },
+        {
+          "qid": "q52",
+          "answer": "0"
+        },
+        {
+          "qid": "q53",
+          "answer": "2"
+        },
+        {
+          "qid": "q54",
+          "answer": "0"
+        },
+        {
+          "qid": "q55",
+          "answer": "1"
+        },
+        {
+          "qid": "q56",
+          "answer": "1"
+        },
+        {
+          "qid": "q57",
+          "answer": "1"
+        },
+        {
+          "qid": "q58",
+          "answer": "2"
+        },
+        {
+          "qid": "q59",
+          "answer": "1"
+        },
+        {
+          "qid": "q60",
+          "answer": "4"
         }
       ]
     },
@@ -943,6 +1074,20 @@
       "exam_desc": "Web Development(HTML,CSS,JS)",
       "emp_id": "6265",
       "score": "90 %"
+    },
+    {
+      "id": "febb",
+      "exam_type": "htmlcssjs",
+      "exam_desc": "Web Development(HTML,CSS,JS)",
+      "emp_id": "6569",
+      "score": "96 %"
+    },
+    {
+      "id": "d9c6",
+      "exam_type": "htmlcssjs",
+      "exam_desc": "Web Development(HTML,CSS,JS)",
+      "emp_id": "6265",
+      "score": "93 %"
     }
   ]
 }
